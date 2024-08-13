@@ -1,0 +1,11 @@
+[workspace]
+members = [
+  # the main library and tests
+  "rustls",
+]
+default-members = ["rustls"]
+resolver = "2"
+
+[profile.bench]
+codegen-units = 1
+lto = true
